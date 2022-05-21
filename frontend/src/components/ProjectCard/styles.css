@@ -1,0 +1,108 @@
+/* CARDS */
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.card {
+   height: 360px;
+   width: 400px;
+   margin: 3rem 0 0;
+   background-image: url('../../assets/img/github.svg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   filter: grayscale(0.8);
+   color:var(--primary-color);
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.card-text {
+    width: 50%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+
+.card-text a {
+    color: var(--purple-color-100);
+    text-transform: uppercase;
+}
+
+.card-text a:hover {
+    color: var(--primary-color);
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    border: 1px solid var(--primary-color);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card-wrapper h2{
+   font-size: 40px;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   margin: 0;
+   transition: 0.3s;
+}
+
+.card-wrapper p {
+   font-size: 0;
+   visibility: hidden;
+   opacity: 0;
+   font-weight: 700;
+   text-transform: uppercase;
+   transition: 0.3s;
+}
+
+.card:hover {
+   filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+   opacity: 1;
+   width: 400px;
+   height: 360px;
+}
+
+.card:hover > .card-wrapper p {
+   font-size: 14px;
+   opacity: 1;
+   visibility: visible;
+}
+
+.card:hover > .card-wrapper a {
+    z-index: 1;
+}

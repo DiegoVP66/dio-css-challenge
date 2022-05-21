@@ -13,6 +13,10 @@
     animation: backgroundTransition 8s ease-in-out infinite;
 }
 
+.name-stack {
+    margin-top: 30px;
+}
+
 .social-media {
     margin-top: 1rem;
     display: flex;
@@ -23,6 +27,7 @@
     color: var(--primary-color);
     font-size: 24px;
     padding:  1rem 4rem;
+    margin-top: 30px;
     border: 1px solid var(--primary-color);
     min-width: 4rem;
     display: flex;
@@ -107,7 +112,6 @@
   background: transparent;
   height: 40px;
   width: 20px;
-  border-radius: 50%;
   z-index: -1;
   transition: 400ms ease-in-out 0s;
 }
@@ -118,14 +122,14 @@
     left: 0;
     width: 100%;
     height:20vh;
-    font-size: 30px;
+    font-size: 24px;
     display: flex;
     align-items: center;
     text-align: center;
     z-index: 1;
     opacity: 0;
     visibility: visible;
-    transition: 400ms ease-in-out 0s;
+    transition: 0ms ease-in-out 0s;
     background: transparent;
 }
 .menu-img {
@@ -145,7 +149,7 @@
 }
 
 .menu-items ul li  {
-    margin: 10px 0;
+    margin: 5px 0;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 80%;

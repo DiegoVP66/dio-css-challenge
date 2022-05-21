@@ -4,7 +4,7 @@ import "./styles.css";
 
 const Navbar = () => {
   return (
-    <nav className="nav-wrapper">
+    <nav className="nav-wrapper" id="home">
       <div>
         <div className="checkbox-container">
           <div className="checkbox-wrapper">
@@ -34,8 +34,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <h1>Diego Vicente Pereira</h1>
-      <h2>Fullstack Developer</h2>
+      <div className="name-stack">
+        <h1>Diego Vicente Pereira</h1>
+        <h2>Fullstack Developer</h2>
+      </div>
       <div className="social-media">
         <a
           href="https://www.linkedin.com/in/diego-vicente-pereira-212647212/"
