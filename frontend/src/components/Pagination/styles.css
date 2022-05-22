@@ -1,0 +1,48 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+  }
+  
+  .pagination-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--light-color);
+    background-color: var(--dark-color);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+   
+  .pagination-link-active {
+    background-color: var(--purple-color-100);
+  }
+  
+  .arrow-previous {
+    transform: rotate(-180deg);
+  }
+  
+  .arrow-next {
+    margin-left: 10px;
+  }
+  
+  .arrow-inactive {
+    color: var(--purple-color-50);
+  }
+  
+  .arrow-active {
+    color: var( --purple-color);;
+  }
+  
+  .pagination-arrow-container {
+    display: flex;
+    align-items: center;
+  }

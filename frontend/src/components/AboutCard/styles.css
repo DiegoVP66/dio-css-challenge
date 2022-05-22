@@ -1,0 +1,32 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.about-profile {
+    width: 100%;
+    text-align: center;
+}
+
+.about-profile img {
+    width: 200px;
+}
+
+
+.about-content-container{
+    margin-top: 30px;
+    max-width: 600px;
+    font-size: 20px;
+    padding: 10px;
+}
+.about-content-container h1 {
+    text-align: center;
+ }
+
+.about-content-container p {
+   font-family: sans-serif;
+   color: var(--primary-color);
+   text-align: center;
+}

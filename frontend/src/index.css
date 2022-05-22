@@ -5,11 +5,14 @@ body {
     padding: 0;
     font-family: 'amatic sc', sans-serif;
     color: var(--primary-color);
+    background-color: var(--pink-color);
 }
 
 :root {
     --bg-color: #f4f4f4;
     --primary-color:#ffff;
+    --pink-color:  #c8a2c8;
+    --pink-color-50:  #b85fb821;
     --purple-color: #2E1C2B;
     --purple-color-50:#4A1942;
     --purple-color-100: #5e0878;

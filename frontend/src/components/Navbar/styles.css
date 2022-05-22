@@ -20,6 +20,7 @@
 .social-media {
     margin-top: 1rem;
     display: flex;
+    flex-direction: column;
 }
 
 .social-media a {
@@ -27,7 +28,7 @@
     color: var(--primary-color);
     font-size: 24px;
     padding:  1rem 4rem;
-    margin-top: 30px;
+    margin-top: 10px;
     border: 1px solid var(--primary-color);
     min-width: 4rem;
     display: flex;
@@ -67,7 +68,7 @@
     position: fixed;
     background: transparent;
     top: 0;
-    right: 0;
+    right: 5px;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -108,10 +109,9 @@
   display: flex;
   position: absolute;
   top: 40px;
-  right: 30px;
+  right: 10px;
   background: transparent;
   height: 40px;
-  width: 20px;
   z-index: -1;
   transition: 400ms ease-in-out 0s;
 }
@@ -143,7 +143,7 @@
 .menu-items ul {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 300px;
     justify-content: space-evenly;
     align-items: flex-start;
 }
@@ -190,6 +190,12 @@
 #toggle:checked ~ .menu-items {
    visibility: visible;
     opacity: 1;
+ }
+
+ @media(min-width: 576px){
+     .social-media {
+         flex-direction: row;
+     }
  }
 
 @media (min-width: 768px){

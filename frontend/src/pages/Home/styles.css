@@ -1,5 +1,7 @@
 .home-container{
-    background-color: #c8a2c8;
     height: 100vh;
-    
+}
+
+.home-about-container {
+    padding-top: 50px;
 }
