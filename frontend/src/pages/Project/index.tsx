@@ -1,6 +1,8 @@
 import Pagination from "components/Pagination";
 import ProjectCard from "components/ProjectCard";
 import { useState } from "react";
+
+import "./styles.css";
 type ControlComponentsData = {
   activePage: number;
 };
@@ -15,7 +17,7 @@ const Project = () => {
     });
   };
   return (
-    <div id="projects">
+    <div className="project-container" id="projects">
       <ProjectCard
         title="DEPLOY"
         text=" Primeiro desafio do Bootcamp da Digital Innovation One.
