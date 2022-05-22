@@ -1,8 +1,9 @@
 package com.diocsschallenge.diego.services;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,8 +18,8 @@ public class AboutService {
 	private AboutRepository repository;
 	
 	@Transactional(readOnly = true)
-	public Page<AboutDTO> findAllPaged(Pageable pageable) {
-		Page<About> page = repository.findAll(pageable);
-		return page.map(x -> new AboutDTO(x));
+	public List<AboutDTO> findAll() {
+		List<About> list = repository.findAll();
+		return list.stream().map(x -> new AboutDTO(x)).collect(Collectors.toList());
 	}
 }

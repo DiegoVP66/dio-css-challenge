@@ -1,20 +1,20 @@
+import { AboutType } from "types/about";
 import Profile from "../../assets/img/profile.svg";
 import "./styles.css";
 
 type Props = {
-  title: string;
-  text: string;
+  about: AboutType;
 };
 
-const AboutCard = ({ title, text }: Props) => {
+const AboutCard = ({ about }: Props) => {
   return (
     <div className="about-container">
       <div className="about-profile">
         <img src={Profile} alt="Desenho de um rosto masculino com barba" />
       </div>
       <div className="about-content-container">
-        <h1>{title}</h1>
-        <p>{text}</p>
+        <h1>{about.title}</h1>
+        <p>{about.description}</p>
       </div>
     </div>
   );

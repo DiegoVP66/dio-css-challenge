@@ -19,16 +19,19 @@ public class About implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
+	private String title;
+
 	@Column(columnDefinition = "TEXT")
 	private String description;
 
 	public About() {
 	}
 
-	public About(Long id, String description) {
+	public About(Long id, String description, String title) {
 		this.id = id;
 		this.description = description;
+		this.title = title;
 	}
 
 	public Long getId() {
@@ -37,6 +40,14 @@ public class About implements Serializable {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public String getDescription() {
