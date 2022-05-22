@@ -10,7 +10,7 @@ const AboutCard = ({ title, text }: Props) => {
   return (
     <div className="about-container">
       <div className="about-profile">
-        <img src={Profile} alt="" />
+        <img src={Profile} alt="Desenho de um rosto masculino com barba" />
       </div>
       <div className="about-content-container">
         <h1>{title}</h1>
