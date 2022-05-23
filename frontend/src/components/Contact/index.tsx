@@ -1,6 +1,5 @@
 import { AxiosRequestConfig } from "axios";
 import { useForm } from "react-hook-form";
-
 import { ContactType } from "types/contact";
 import { makeBackendRequest } from "util/request";
 import "./styles.css";
@@ -93,9 +92,6 @@ const Contact = () => {
           <div className="btn-adjust">
             <div className="btn-container">
               <button className="btn-register">ENVIAR</button>
-            </div>
-            <div className="btn-container">
-              <button className="btn-cancel">CANCELAR</button>
             </div>
           </div>
         </form>
