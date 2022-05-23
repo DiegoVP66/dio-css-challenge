@@ -18,11 +18,12 @@ const Navbar = () => {
             <div className="menu-img">
               <img src={Dname} alt="" />
             </div>
-            <div className="menu-items">
+            <div className="menu-items mt-4">
               <ul>
                 <li>
                   <a href="#home">Home</a>
                 </li>
+
                 <li>
                   <a href="#about">Sobre</a>
                 </li>

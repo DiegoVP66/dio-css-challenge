@@ -156,7 +156,7 @@
 }
 
 .menu-items ul li a:hover  {
-  font-size: 60px;
+  font-size: 30px;
 }
 
 
@@ -201,8 +201,9 @@
 @media (min-width: 768px){
     .menu-items {
         opacity: 1;
-        height: 200px;
+        height: 100px;
     }
+
     .menu-items ul {
         flex-direction: row;
         width: 100%;
