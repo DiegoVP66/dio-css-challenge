@@ -9,3 +9,7 @@
 .home-contact-container {
     padding: 30px;
 }
+
+.home-login-container{
+    max-width: 500px;
+}
