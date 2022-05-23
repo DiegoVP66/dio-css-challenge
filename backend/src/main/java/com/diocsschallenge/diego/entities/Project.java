@@ -15,14 +15,14 @@ import javax.persistence.Table;
 public class Project implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String title;
 	private String name;
 	private String note;
-	
+
 	@Column(columnDefinition = "TEXT")
 	private String text;
 	private String link;

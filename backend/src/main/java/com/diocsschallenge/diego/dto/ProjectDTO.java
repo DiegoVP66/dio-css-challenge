@@ -27,12 +27,12 @@ public class ProjectDTO implements Serializable {
 	}
 
 	public ProjectDTO(Project entity) {
-		this.id = entity.getId();
-		this.title = entity.getTitle();
-		this.name = entity.getName();
-		this.note = entity.getNote();
-		this.text = entity.getText();
-		this.link = entity.getLink();
+		id = entity.getId();
+		title = entity.getTitle();
+		name = entity.getName();
+		note = entity.getNote();
+		text = entity.getText();
+		link = entity.getLink();
 	}
 
 	public Long getId() {
