@@ -1,5 +1,4 @@
 import Contact from "components/Contact";
-import Footer from "components/Footer";
 import About from "pages/About";
 import Project from "../Project";
 import "./styles.css";
@@ -14,10 +13,6 @@ const Home = () => {
 
       <div className="home-contact-container">
         <Contact />
-      </div>
-
-      <div>
-        <Footer />
       </div>
     </div>
   );

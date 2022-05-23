@@ -21,7 +21,6 @@ public class Contact implements Serializable {
 	private Long id;
 	private String name;
 
-	@Column(unique = true)
 	private String email;
 
 	@Column(columnDefinition = "TEXT")

@@ -1,12 +1,11 @@
-import Navbar from "./components/Navbar";
 import "./App.css";
-import Home from "./pages/Home";
+
+import RoutesComponent from "routes";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
+      <RoutesComponent />
     </div>
   );
 }

@@ -1,12 +1,17 @@
+import { AxiosRequestConfig } from "axios";
 import Pagination from "components/Pagination";
 import ProjectCard from "components/ProjectCard";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { ProjectType } from "types/project";
+import { SpringPage } from "types/spring";
+import { makeBackendRequest } from "util/request";
 
 import "./styles.css";
 type ControlComponentsData = {
   activePage: number;
 };
 const Project = () => {
+  const [page, setPage] = useState<SpringPage<ProjectType>>();
   const [controlComponentsData, setControlComponentsData] =
     useState<ControlComponentsData>({
       activePage: 0,
@@ -16,21 +21,39 @@ const Project = () => {
       activePage: pageNumber,
     });
   };
+
+  const getProjects = useCallback(() => {
+    const config: AxiosRequestConfig = {
+      method: "GET",
+      url: `/projects`,
+
+      params: {
+        page: controlComponentsData.activePage,
+        size: 1,
+      },
+    };
+
+    makeBackendRequest(config).then((response) => {
+      setPage(response.data);
+    });
+  }, [controlComponentsData]);
+
+  useEffect(() => {
+    getProjects();
+  }, [getProjects]);
   return (
     <div className="project-container" id="projects">
-      <ProjectCard
-        title="DEPLOY"
-        text=" Primeiro desafio do Bootcamp da Digital Innovation One.
-        O desafio consiste em criar um repositório no GitHub com as 
-        informações sobre o conteúdo dos cursos que estão sendo realizados.
-        Criei um 'mini-portfólio' utilizando SpringBoot e ReactJS.
-        Para mais informações acesse o link do repositório"
-        note="https://dio-git-challenge.netlify.app/"
-        name="GitHub"
-        link="https://github.com/DiegoVP66/DIO-GIT-CHALLENGE"
-      />
+      {page?.content.map((item) => (
+        <div key={item.id}>
+          <ProjectCard project={item} />
+        </div>
+      ))}
       <div className="row pagination-container">
-        <Pagination pageCount={3} range={3} onChange={handlePageChange} />
+        <Pagination
+          pageCount={page ? page.totalPages : 0}
+          range={3}
+          onChange={handlePageChange}
+        />
       </div>
     </div>
   );

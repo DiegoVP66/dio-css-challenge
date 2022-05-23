@@ -21,6 +21,7 @@
    height: 280px;
    width: 280px;
    margin: 3rem 0 0;
+   background: transparent;
    background-image: url('../../assets/img/github.svg');
    background-position: center;
    background-repeat: no-repeat;
@@ -32,6 +33,7 @@
    color:var(--primary-color);
    cursor: pointer;
    transition: 0.3s;
+   border: none;
 }
 
 .card-text {
