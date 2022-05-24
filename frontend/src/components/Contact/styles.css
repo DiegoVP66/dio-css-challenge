@@ -4,6 +4,7 @@
   align-items: center;
   width: 90%;
   padding-bottom: 60px;
+  font-family: sans-serif;
 }
 
 .form input, textarea{
@@ -66,6 +67,3 @@ form input{
   .btn-container button:hover{
       background-color: var(--purple-color-50);
   }  
-  @media (min-width: 992px) {
-    
-  }

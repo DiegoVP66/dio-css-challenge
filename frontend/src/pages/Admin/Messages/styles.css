@@ -1,0 +1,8 @@
+.message-container {
+    background-color: var(--pink-color-50);
+    margin-top: 10px;
+}
+.message-content-container{
+    background-color: var(--pink-color);
+    padding: 10px;
+}

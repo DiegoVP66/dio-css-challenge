@@ -1,0 +1,22 @@
+.auth-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+  }
+  
+  .auth-login-container {
+    margin-right: 50px; 
+  }
+
+  @media (min-width: 768px) {
+    .auth-container {
+      width: 100%;
+      justify-content: center;
+    }
+    .auth-login-container {
+      width: 500px;
+    }
+    
+  }

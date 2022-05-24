@@ -1,7 +1,13 @@
+import { AuthContext } from "AuthContextData";
 import { AxiosRequestConfig } from "axios";
+import Message from "pages/Admin/Messages";
+import { useContext, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { ContactType } from "types/contact";
+import { isAuthenticated } from "util/auth";
 import { makeBackendRequest } from "util/request";
+import { getTokenData } from "util/token";
+import { toast } from "react-toastify";
 import "./styles.css";
 
 const Contact = () => {
@@ -24,13 +30,27 @@ const Contact = () => {
 
     makeBackendRequest(config)
       .then(() => {
-        //Testando
-        window.location.reload();
+        toast.info("Mensagem enviada com sucesso!");
       })
-      .catch((error) => {
-        console.log("Erro: " + error);
+      .catch(() => {
+        toast.error("Erro ao enviar a mensagem!");
       });
   };
+
+  const { authContextData, setAuthContextData } = useContext(AuthContext);
+
+  useEffect(() => {
+    if (isAuthenticated()) {
+      setAuthContextData({
+        authenticated: true,
+        tokenData: getTokenData(),
+      });
+    } else {
+      setAuthContextData({
+        authenticated: false,
+      });
+    }
+  }, [setAuthContextData]);
 
   return (
     <div className="form-container" id="contact">
@@ -95,6 +115,15 @@ const Contact = () => {
             </div>
           </div>
         </form>
+        <div>
+          {authContextData.authenticated ? (
+            <div>
+              <Message />
+            </div>
+          ) : (
+            <></>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,43 @@
+.project-crud-card-container{
+    background-color: var(--purple-color);
+    margin-top: 10px;
+    max-width: 600px;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.project-crud-card-container h1{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.project-crud-card-container h2{
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.project-crud-card-container p{
+    font-size: 0.5em;  
+}
+
+
+.btn-project-crud-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-delete-button{
+    margin-right: 15px;
+}
+
+.btn-project-edit{
+    background-color: var(--pink-color);
+    color: var(--primary-color);
+}
