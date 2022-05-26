@@ -20,7 +20,7 @@
 - ReactJS
 - TypeScript
 - HTML 5
-- CSS#
+- CSS3
 - Bootstrap( Foi utilizado somente nos formulários)
 - Java
 - Spring Boot
