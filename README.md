@@ -41,11 +41,6 @@ https://dio-css-portfolio.netlify.app/
 
 <div> 
   <img src="https://user-images.githubusercontent.com/84286836/169931301-9f8a3cb2-f89b-4a34-ba28-965b11e92a08.png"  alt="one"/>
-  <img src="https://user-images.githubusercontent.com/84286836/169931311-0dc4b323-a125-4541-b222-d0f74e51c9ee.png" alt="two"/>
   <img src="https://user-images.githubusercontent.com/84286836/169931316-4b131d5d-8dca-4eab-a0d0-1b754cf3b2b2.png" alt="three" />
-  <img src="https://user-images.githubusercontent.com/84286836/169931308-aaabf092-a9bf-4a01-8e20-65c5c4f8c4df.png" alt="four" />
-  <img src="https://user-images.githubusercontent.com/84286836/169931305-96ba9564-9cbc-4799-ac14-76013b7cd7e0.png"  alt="five"/>
-  <img src="https://user-images.githubusercontent.com/84286836/169931314-5c51e204-0fa2-4b68-af7a-c149a6b48ceb.png"  alt="six"/>
-  <img src="https://user-images.githubusercontent.com/84286836/169931312-8e9ab614-5030-4aa8-8817-c2e24a1bb624.png"  alt="seven"/>
 </div> 
 
