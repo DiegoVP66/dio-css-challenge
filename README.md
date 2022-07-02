@@ -33,6 +33,5 @@
 
 <div> 
   <img src="https://user-images.githubusercontent.com/84286836/169931301-9f8a3cb2-f89b-4a34-ba28-965b11e92a08.png"  alt="one"/>
-  <img src="https://user-images.githubusercontent.com/84286836/169931316-4b131d5d-8dca-4eab-a0d0-1b754cf3b2b2.png" alt="three" />
 </div> 
 
